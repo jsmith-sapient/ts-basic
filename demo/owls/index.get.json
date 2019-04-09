@@ -1,0 +1,14 @@
+[
+  {
+    "breed": "Snowy Owl",
+    "color": "white",
+    "name": "Hedwig",
+    "sex": "female"
+  },
+  {
+    "breed": "Miniature Scops Owl",
+    "color": "grey",
+    "name": "Pigwidgeon",
+    "sex": "male"
+  }
+]

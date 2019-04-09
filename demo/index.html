@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<style type="text/css">
+			textarea,
+			.field {
+				display: block;
+				width: 100%;
+			}
+			.field {
+				padding: 0.5rem 0;
+			}
+
+			.field + .field {
+				border-top: 1px solid grey;
+				margin-top: 0.5rem;
+			}
+
+			#output {
+				white-space: pre-wrap;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<form
+				name="api"
+			>
+				<button
+					class="field"
+					type="submit"
+				>Go!</button>
+				<label
+					class="field"
+				>
+					Action
+					<select
+						name="action"
+					>
+						<option value="GET" selected="">GET</option>
+					</select>
+				</label>
+				<label
+					class="field"
+				>
+					Resource
+					<input
+						name="resource"
+						value="cats"
+					/>
+				</label>
+				<label
+					class="field"
+				>
+					Data
+					<textarea
+						name="data"
+						placeholder="{}"
+						rows="10"
+					></textarea>
+				</label>
+			</form>
+			
+			<hr />
+
+			<div id="output"></div>
+		</main>
+		<script type="module" src="../dist/index.js"></script>
+	</body>
+</html>

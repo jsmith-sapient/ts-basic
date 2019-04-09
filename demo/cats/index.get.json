@@ -1,0 +1,14 @@
+[
+	{
+		"breed": "Abyssinian",
+		"color": "saffron",
+		"name": "Sephie",
+		"sex": "female"
+	},
+	{
+		"breed": "Persian",
+		"color": "white",
+		"name": "Snowball",
+		"sex": "male"
+	}
+]

@@ -1,0 +1,39 @@
+{
+  "name": "ts-basic",
+  "version": "0.1.0",
+  "description": "basic typescript project with testing",
+  "main": "index.js",
+  "scripts": {
+    "dev:api": "canned -p 3001 ./",
+    "dev:app": "tsc --watch",
+    "dev:serve": "http-server -d false -e js -p 3000 -P http://localhost:3001",
+    "start:dev": "concurrently \"npm:dev:*\"",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsmith-sapient/ts-basic.git"
+  },
+  "keywords": [
+    "typscript",
+    "jest"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsmith-sapient/ts-basic/issues"
+  },
+  "homepage": "https://github.com/jsmith-sapient/ts-basic#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "canned": "^0.3.12",
+    "concurrently": "^4.1.0",
+    "http-server": "^0.11.1",
+    "jest": "^24.7.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.2"
+  },
+  "dependencies": {
+    "ky": "^0.9.0"
+  }
+}
